@@ -1,0 +1,235 @@
+
+/* CSS Styles for index.html */
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-image: url('/attachments/images/wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.99;
+    backdrop-filter: blur(25px);
+    background-color: #000e516b;
+    z-index: -1;
+}
+div.myPhoto {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.myPhoto img {
+    outline: 3px solid blue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 0px blue;
+    width: 75px;
+    cursor: pointer;
+    transition: all 0.25s 0s ease;
+}
+.myPhoto img:hover {
+    box-shadow: 0px 0px 50px 0px red;
+    outline: 3px solid red;
+    transform: scale(1.05);
+}
+
+/* header code */
+
+header {
+    margin: 10px 22.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    border-radius: 100px;
+    background: rgb(36, 36, 67);
+    box-shadow: 0px 0px 10px 0px white;
+    animation: top-to-bottom 0.5s 0s ease;
+}
+ul.nav {
+    list-style: none;
+}
+.nav li {
+    display: inline;
+}
+.nav li.active button {
+    color: rgb(16, 192, 253);
+    background-color: rgb(16, 85, 146);
+    border-bottom: 3px solid rgb(16, 192, 253);
+    text-shadow: 0px 0px 10px rgb(16, 192, 253);
+}
+.nav li button {
+    padding: 8px 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+    width: 120px;
+    transition: all 0.25s 0s ease;
+}
+.nav li button:hover {
+    color: rgb(142, 227, 255);
+    background-color: rgba(36, 78, 115, 0.765);
+    border-bottom: 3px solid rgb(16, 192, 253);
+    text-shadow: 0px 0px 10px rgb(16, 192, 253);
+}
+.nav li button:focus {
+    color: rgb(16, 192, 253);
+    background-color: rgb(16, 85, 146);
+    border-bottom: 3px solid rgb(16, 192, 253);
+    text-shadow: 0px 0px 10px rgb(16, 192, 253);
+}
+.nav li button:active {
+    color: rgb(0, 0, 0);
+    transform: scale(0.9);
+}
+/* header code */
+/* ----------------------------------- */
+/* Image content during Click */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 50px 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-Container {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    max-width: 700px;
+    background-color: #86b4ff80;
+    color: white;
+    border: 3px solid darkblue;
+    outline: 1px solid blue;
+    box-shadow: 0px 0px 50px 0px blue;
+    border-radius: 50px;
+    width: 60%;
+    height: 75%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    z-index: 1;
+}
+.modal-Container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    opacity: 0.9;
+    backdrop-filter: blur(25px);
+    z-index: -1;
+}
+.div2 {
+    display: flex;
+    justify-content: center;
+}
+.div3 {
+    width: 80%;
+    height: 80%;
+}
+.div4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+.close {
+    position: fixed;
+    top: 75px;
+    right: 300px;
+    color: #f1f1f1;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* End of Image content during Click */
+/* ----------------------------------- */
+/* section code */
+
+section {
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px white inset;
+    color: white;
+}
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.99;
+    backdrop-filter: blur(25px);
+    z-index: -1;
+}
+section h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px blue;
+    animation: pulse 5s 0s infinite linear;
+}
+.cv-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cv-btn button {
+    background-color: darkblue;
+    color: white;
+    padding: 8px 10px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s 0s ease;
+}
+.cv-btn button:hover {
+    background-color: blue;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.372);
+}
+
+/* End of section */
+/* ----------------------------------- */
+/* footer code */
+footer {
+    background: rgba(0, 0, 65, 0.815);
+    box-shadow: 0px 0px 10px 0px white inset;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
