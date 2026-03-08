@@ -1,0 +1,186 @@
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+header .container{
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+}
+
+.ul-header{
+    padding: 10px;
+    margin: 0;
+}
+
+.ul-header a{
+    width: auto;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.container img{
+    width: 60px;
+}
+
+.modal-Container{
+    width: 80%;
+    height: 80%;
+}
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+header{
+    height: auto;
+}
+
+header .container{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ul-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20px;
+}
+
+.ul-header a{
+    width: auto;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.sun-moon{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+section{
+    padding: 15px;
+    text-align: center;
+}
+
+.cv-btn{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cv-btn button{
+    font-size: 14px;
+    padding: 6px 8px;
+}
+
+.modal-Container{
+    width: 90%;
+    height: 75%;
+}
+
+.div3{
+    width: 95%;
+}
+
+footer{
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer ul{
+    padding: 0;
+}
+
+}
+
+/* ========================= */
+/* Small Phones */
+/* ========================= */
+
+@media (max-width: 480px){
+
+.ul-header{
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul-header a{
+    width: 100%;
+}
+
+.container img{
+    width: 55px;
+}
+
+section h1{
+    font-size: 22px;
+}
+
+section p{
+    font-size: 14px;
+}
+
+.modal-Container{
+    width: 95%;
+    height: 70%;
+}
+
+}
+
+@media (min-width: 768px){
+*{
+cursor: none;
+}
+}
+
+/* menu icon */
+
+.menu-toggle{
+    display: none;
+    font-size: 30px;
+    color: var(--whiteBlack);
+}
+
+/* mobile */
+
+@media (max-width:768px){
+
+.menu-toggle{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.ul-header{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--from000035To9fdcff);
+    border-radius: 0;
+    padding: 20px 0;
+    display: none;
+}
+
+.ul-header a{
+    width: 100%;
+}
+
+.ul-header.show{
+    display: flex;
+}
+
+}

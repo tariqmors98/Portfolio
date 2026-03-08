@@ -1,5 +1,41 @@
 /* Animations for index.html */
 
+/* Loading page */
+
+@keyframes typing {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes loading {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 100%;
+    }
+}
+@keyframes spinner {
+    0% {
+        rotate: 0deg;
+    } 100% {
+        rotate: 360deg;
+    }
+}
+@keyframes spinner-img {
+    0% {
+        rotate: 0deg;
+    } 100% {
+        rotate: -360deg;
+    }
+}
+
 /* header code */
 
 @keyframes top-to-bottom {
