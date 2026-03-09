@@ -175,7 +175,7 @@ header {
     left: 0;
     width: 100%;
     height: 90px;
-    background: var(--from050520ToSkyblue);
+    background: var(--radial-gradient-Color);
     backdrop-filter: blur(20px);
     animation: top-to-bottom 1s 1s ease;
     z-index: 1;
@@ -192,11 +192,12 @@ header div.container {
     border-radius: 50%;
     box-shadow: 0 0 20px 0 var(--whiteBlack);
     width: 80px;
+    margin-right: -70px;
 }
 ul.ul-header {
     list-style: none;
     padding: 10px 100px;
-    margin: auto 100px;
+    margin: auto;
     background-color: var(--from000035To9fdcff);
     border: 2px solid var(--fromCyanTo000020);
     border-radius: 50px;
@@ -208,7 +209,7 @@ ul.ul-header {
     color: var(--whiteBlack);
     font-size: 20px;
     font-weight: bold;
-    border: 1px solid var(--fromffffff80To00000080);
+    border: 3px solid var(--fromffffff80To00000080);
     border-bottom: 3px solid var(--fromCyanTo000020);
     border-radius: 15px 15px 0 0;
     display: inline-block;
@@ -248,8 +249,13 @@ ul.ul-header {
     border: 3px solid var(--whiteBlack);
 }
 .container div.sun-moon {
-    width: 35px;
-    height: 35px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    color: var(--fromCyanTo000020);
 }
 .sun-moon i {
     position: absolute;
@@ -260,16 +266,21 @@ ul.ul-header {
 i.bi-moon-fill {
     display: none;
 }
+.container div.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: var(--whiteBlack);
+}
+
 /* header code */
 /* ----------------------------------- */
 /* Image content during Click */
 
 .modal {
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: absolute;
     width: 100%;
     height: 100%;
+    margin: auto;
     overflow: hidden;
     background-color: var(--from00000080Toffffff80);
     z-index: 1;

@@ -12,10 +12,18 @@ document.addEventListener("mousemove", (e) => {
 
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.querySelector(".ul-header");
+const whenClicked = document.querySelectorAll(".whenClicked");
 
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 });
+
+whenClicked.forEach(function (link) {
+    link.addEventListener("click", function () {
+        navMenu.classList.remove("show");
+    });
+});
+
 
 /* showing body after 1s */
 

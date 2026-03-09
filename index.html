@@ -28,12 +28,14 @@
         <!-- Start of header -->
         <header>
             <div class="container">
-                <img src="attachments/wallpapers/myProfilePicture.png" alt="" onclick="openDetail()" title="My profile photo. Click the picture to review my information.">
-                <ul class="ul-header">
-                    <a href="#Home" class="active">Home</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                <div class="imgContainer">
+                    <img src="attachments/wallpapers/myProfilePicture.png" alt="" onclick="openDetail()" title="My profile photo. Click the picture to review my information.">
+                </div>
+                <ul class="ul-header" id="ul-header">
+                    <a class="whenClicked" href="#Home" class="active">Home</a>
+                    <a class="whenClicked" href="#skills">Skills</a>
+                    <a class="whenClicked" href="#projects">Projects</a>
+                    <a class="whenClicked" href="#contact">Contact</a>
                 </ul>
                 <div class="sun-moon">
                     <i class="bi bi-sun-fill" id="to-light"></i>
@@ -83,7 +85,7 @@
                 <button onclick="window.open('/Portfolio/attachments/transcript-20240496.pdf', '_blank')">Review CV</button>
             </div>
         </section>
-        <footer id="skills">
+        <footer id="contact">
             <p>My Social Media Handles</p>
             <ul>
                 <li><a href="https://www.linkedin.com/in/tariq-ahmed-2964b3374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
