@@ -24,7 +24,7 @@
     margin: 0;
     padding: 0;
     transition: all 1500ms 250ms ease;
-    cursor: none;
+    /* cursor: none; */
 }
 html {
     scroll-behavior: smooth;
@@ -40,23 +40,10 @@ body {
     overflow-x: hidden;
     z-index: 0;
 }
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: blur(20px);
-    background-image: url('../attachments/wallpapers/wallpaper.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
-}
 
 /* cursor pointer */
 
-body span#mouseGlow {
+/* body span#mouseGlow {
     position: fixed;
     width: 10px;
     height: 10px;
@@ -68,7 +55,7 @@ body span#mouseGlow {
     transform: translate(-50%, -50%);
     transition: all 25ms 0s linear;
     z-index: 999;
-}
+} */
 
 /* Loading page code */
 
@@ -334,7 +321,7 @@ i.bi-moon-fill {
 section {
     position: relative;
     padding: 20px;
-    background: radial-gradient(var(--radial-gradient-Color), var(--radial-gradient-Color2));
+    background: radial-gradient(var(--radial-gradient-Color) -50%, var(--radial-gradient-Color2));
     color: var(--whiteBlack);
     transition: all 1500ms 250ms ease;
 }
@@ -345,16 +332,64 @@ section::before {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.99;
-    backdrop-filter: blur(25px);
+    filter: blur(3px);
     z-index: -1;
-    transition: all 1500ms 250ms ease;
 }
-section h1 {
-    text-align: center;
+section h1.welcome-h1 {
+    margin-left: 20px;
     color: var(--whiteBlack);
     text-shadow: 0px 0px 10px var(--BtnHover);
-    animation: pulse 5s 0s infinite linear;
+    border-right: 3px solid blue;
+    white-space: pre;
+    overflow: hidden;
+    width: 435px;
+    animation: typing-h1 2s 0s steps(250) infinite, blink 350ms infinite ease;
+}
+section pre {
+    font-size: 20px;
+    margin-left: 40px;
+}
+section pre h1 {
+    margin-left: 20px;
+    color: var(--whiteBlack);
+    text-shadow: 0px 0px 10px var(--BtnHover);
+    border-right: 3px solid blue;
+    white-space: pre;
+    overflow: hidden;
+    width: 300px;
+    animation: typing-p 5s 0s steps(2500), blink 500ms infinite ease;
+}
+section div.myPicture {
+    position: absolute;
+    top: 20px;
+    right: 2%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    outline: 2px solid black;
+    overflow: hidden;
+    z-index: 0;
+}
+.myPicture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#00f2ff,#4da3ff,#6f00ff);
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+}
+.myPicture img {
+    border-radius: 20px;
+    outline: 1px solid black;
+    object-fit:cover;
+    width: 95%;
+    height: 95%;
 }
 .cv-btn {
     display: flex;
