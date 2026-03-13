@@ -2,11 +2,18 @@
 
 /* Loading page */
 
-@keyframes typing {
+@keyframes typing-1 {
     from {
         width: 0%;
     } to {
-        width: 100%;
+        width: 935px;
+    }
+}
+@keyframes typing-2 {
+    from {
+        width: 0%;
+    } to {
+        width: 400px;
     }
 }
 @keyframes blink {

@@ -75,37 +75,44 @@ div#loader {
 #loader h1.loader-name {
     overflow: hidden;
     white-space: pre;
-    border-right: 3px solid cyan;
+    border: 3px solid cyan;
+    padding: 30px;
+    padding-left: 10px;
     color: white;
     font-size: 60px;
     font-weight: bolder;
-    width: auto;
+    width: 935px;
     margin-bottom: 35px;
     letter-spacing: 25px;
     text-shadow: 0 0 50px cyan;
-    animation: typing 3s steps(2500), blink 350ms infinite;
+    animation: typing-1 3s steps(2500), blink 350ms infinite;
 }
 #loader p.loader-job {
     overflow: hidden;
     white-space: pre;
-    border-right: 3px solid cyan;
+    border: 3px solid cyan;
+    padding: 20px;
+    padding-left: 8px;
     color: white;
     font-size: larger;
     font-weight: bolder;
+    width: 400px;
     text-shadow: 0 0 10px cyan;
     margin-bottom: 35px;
     letter-spacing: 10px;
-    animation: typing 3s steps(2500), blink 350ms infinite;
+    animation: typing-2 3s steps(2500), blink 350ms infinite;
 }
 #loader .loader-bar {
+    padding: 2px;
     width: 600px;
-    height: 8px;
+    height: 15px;
     background: red;
     overflow: hidden;
     border-radius: 10px;
 }
 #loader .loader-progress {
     border-right: 5px solid black;
+    border-radius: 20px;
     width: 0%;
     height: 100%;
     background: cyan;
@@ -115,8 +122,10 @@ div#loader {
     margin-top: 20px;
     width: 100px;
     height: 100px;
+    background-color: cyan;
     border: 10px solid cyan;
-    border-top: 8px solid red;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
     border-radius: 50%;
     box-shadow: 0 0 30px cyan;
     overflow: hidden;
@@ -142,7 +151,7 @@ div#loader {
 
 body #mainContent {
     display: none;
-    opacity: 1;
+    opacity: 0;
     background-color: #050520;
     filter: blur(100px);
     transition: 1s 0s ease-out;

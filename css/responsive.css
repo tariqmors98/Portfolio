@@ -1,7 +1,16 @@
 
 /* Tablet Resolution */
 
-@media (max-width: 992px) {
+@media (max-width: 950px) {
+    div#loader .loader-name {
+        scale: 0.8;
+        border: 3px solid cyan;
+        padding: 30px 0 30px 10px;
+    }
+    div#loader .loader-job {
+        border: 3px solid cyan;
+        padding: 20px 0 20px 8px;
+    }
     header .container {
         gap: 10px;
         height: auto;
@@ -22,7 +31,6 @@
         top: 50%;
         right:50%;
         transform: translate(50%, -50%);
-
     }
 }
 
@@ -75,7 +83,27 @@
         padding: 0;
     }
 }
+@media (max-width: 768px) {
+    div#loader .loader-name {
+        margin-bottom: 0;
+        padding: 50px 0 50px 10px;
+        scale: 0.6;
+    }
+    div#loader .loader-bar {
+        scale:0.75;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    div#loader {
+        scale: 0.75;
+    }
+}
+@media screen and (max-width:430px) {
+    div#loader {
+        scale: 0.65;
+    }
+}
 /* Small Phones Resolution */
 
 @media (max-width: 480px) {
