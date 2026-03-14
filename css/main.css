@@ -24,7 +24,6 @@
     margin: 0;
     padding: 0;
     transition: all 1500ms 250ms ease;
-    /* cursor: none; */
 }
 html {
     scroll-behavior: smooth;
@@ -41,7 +40,6 @@ body {
     z-index: 0;
 }
 
-/* cursor pointer */
 
 /* body span#mouseGlow {
     position: fixed;
@@ -259,6 +257,9 @@ ul.ul-header {
     color: var(--fromCyanTo000020);
     font-size: 25px;
 }
+.sun-moon i:hover {
+    cursor: pointer;
+}
 i.bi-moon-fill {
     display: none;
 }
@@ -345,35 +346,42 @@ section::before {
     z-index: -1;
 }
 section h1.welcome-h1 {
-    margin-left: 20px;
+    margin-bottom: 25px;
+    padding: 0 5px;
     color: var(--whiteBlack);
+    background-color: rgba(255, 0, 0, 0.048);
     text-shadow: 0px 0px 10px var(--BtnHover);
     border-right: 3px solid blue;
     white-space: pre;
     overflow: hidden;
-    width: 435px;
-    animation: typing-h1 2s 0s steps(250) infinite, blink 350ms infinite ease;
+    width: fit-content;
+    animation: typing-h1 2s 0s steps(50) 2, blink 500ms infinite ease;
 }
-section pre {
-    font-size: 20px;
-    margin-left: 40px;
+section div.me-full-stack {
+    width: fit-content;
+    margin-left: 10px;
 }
-section pre h1 {
+.me-full-stack p {
+    margin: 0;
+}
+.me-full-stack h1 {
+    padding: 5px;
     margin-left: 20px;
     color: var(--whiteBlack);
     text-shadow: 0px 0px 10px var(--BtnHover);
     border-right: 3px solid blue;
+    border-bottom: 3px solid blue;
     white-space: pre;
     overflow: hidden;
-    width: 300px;
-    animation: typing-p 5s 0s steps(2500), blink 500ms infinite ease;
+    width: fit-content;
+    animation: typing-p 3s 0s steps(2500), blink 500ms infinite ease;
 }
 section div.myPicture {
     position: absolute;
     top: 20px;
     right: 2%;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,7 +426,6 @@ section div.myPicture {
 .cv-btn button:hover {
     background-color: var(--BtnHover);
     box-shadow: 0 0 5px 0px var(--whiteBlack);
-    cursor: none;
 }
 
 /* End of section */

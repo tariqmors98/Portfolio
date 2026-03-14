@@ -40,7 +40,7 @@
     header {
         height: auto;
     }
-    .ul-header {
+    ul.ul-header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -56,7 +56,12 @@
     }
     section {
         padding: 15px;
-        text-align: center;
+    }
+    section div.myPicture {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
     }
     .cv-btn {
         justify-content: center;
@@ -107,21 +112,11 @@
 /* Small Phones Resolution */
 
 @media (max-width: 480px) {
-    .ul-header {
-        flex-direction: column;
-        align-items: center;
-    }
     .ul-header a {
         width: 100%;
     }
     .container img {
         width: 55px;
-    }
-    section h1 {
-        font-size: 22px;
-    }
-    section p {
-        font-size: 14px;
     }
     .modal-Container {
         width: 95%;
@@ -145,8 +140,14 @@
         margin: auto;
         color: var(--fromCyanTo000020);
     }
-    .ul-header {
-        display: none;
+    ul.ul-header {
+        position: absolute;
+        top: -100%;
+        right: 100%;
+        display: grid;
+        width: 0;
+        transition: all 500ms 0s ease;
+        overflow: hidden;
     }
     .ul-header a {
         width: 180px;
@@ -161,5 +162,17 @@
         background: var(--from000035To9fdcff);
         border-radius: 0 0 50px 0;
         padding: 20px 0;
+    }
+    section div.myPicture {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width:535px) {
+    section div.myPicture {
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
     }
 }
