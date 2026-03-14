@@ -172,6 +172,7 @@
 @media (max-width:535px) {
     section div.myPicture {
         margin-top: 50px;
+        margin-right: 10px;
         width: 100px;
         height: 100px;
     }
