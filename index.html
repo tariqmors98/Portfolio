@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mouseGlow.css">
+</head>
+<body id="Home">
+    <span id="mouseGlow" class="mouseGlow"></span>
+    <div id="loader">
+        <h1 class="loader-name">< TARIQ AHMED /></h1>
+        <p class="loader-job">Full Stack Developer</p>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+        <p id="loadText">..... Loading 0% .....</p>
+        <div class="spinner">
+            <img src="attachments/wallpapers/myProfilePicture.png" alt="">
+        </div>
+    </div>
+    <div id="mainContent">
+        <!-- Start of header -->
+        <header>
+            <div class="container">
+                <div class="imgContainer">
+                    <img src="attachments/wallpapers/myProfilePicture.png" alt="" onclick="openDetail()" title="My profile photo. Click the picture to review my information.">
+                </div>
+                <ul class="ul-header" id="ul-header">
+                    <a class="whenClicked" href="#Home" class="active">Home</a>
+                    <a class="whenClicked" href="#projects">Projects</a>
+                    <a class="whenClicked" href="#skills">Skills</a>
+                    <a class="whenClicked" href="#contact">Contact</a>
+                </ul>
+                <div class="sun-moon">
+                    <i class="bi bi-sun-fill" id="to-light"></i>
+                    <i class="bi bi-moon-fill" id="to-dark"></i>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+        </header>
+        <!-- End of header -->
+        <!-- Image content during Click -->
+        <div id="imageModal" class="modal">
+            <div id="modal-Container" class="modal-Container">
+                <span class="close" onclick="closeDetail()">&times;</span>
+                <div class="div2">
+                    <div class="div3">
+                        <div id="caption">
+                            <h2>Tariq Ahmed</h2>
+                            <p>Frontend Web Developer</p>
+                            <p>Email: tariqmors98@gmail.com</p>
+                            <p>Mobile: +20 101 290 4298</p>
+                            <p>Phone: +20 114 486 9335</p>
+                            <p>Location: Dokki, Giza, Egypt</p>
+                            <p>University: Helwan University</p>
+                            <p>Graduation Year: 2025</p>
+                            <p>GitHub: <a href="https://github.com/tariqmors98">tariqmors98</a></p>
+                            <p>LinkedIn: Tariq Ahmed</p>
+                            <p>Facebook: tarouqm06_</p>
+                            <p>Instagram: tarouqm06_</p>
+                            <p>WhatsApp: +201012904298</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of image content -->
+        <!-- Start of section -->
+        <section>
+            <h1 class="welcome-h1">Welcome to My Portfolio</h1>
+            <div class="me-full-stack">
+                <p>Hey, I'm a</p> <br>
+                <h1>Full-Stack <br>Web Developer</h1>
+            </div>
+            <div class="myPicture">
+                <img src="attachments/wallpapers/myProfilePicture.png" alt="">
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="cv-btn">
+                <button>Download CV</button>
+                <button>Review CV</button>
+            </div>
+        </section>
+        <footer id="contact">
+            <p>My Social Media Handles</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/tariq-ahmed-2964b3374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                <li><a href="https://github.com/tarouqm06_">GitHub</a></li>
+                <li><a href="https://wa.me/+201012904298">WhatsApp</a></li>
+                <li><a href="https://www.facebook.com/tarouqm06_">Facebook</a></li>
+                <li><a href="https://www.instagram.com/tarouqm06_">Instagram</a></li>
+                <li><a href="mailto:tarouqm06@gmail.com">Email Me</a></li>
+            </ul>
+            <p>My Skills</p>
+            <ul>
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>Firebase</li>
+                <li>Git & GitHub</li>
+                <li>RESTful APIs</li>
+                <li>UI/UX Design Principles</li>
+            </ul>
+            <p>  My Portfolio 2025 &copy;</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
