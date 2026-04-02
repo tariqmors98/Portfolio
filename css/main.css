@@ -44,7 +44,7 @@ body {
 }
 
 
-/* body span#mouseGlow {
+body span#mouseGlow {
     position: fixed;
     width: 10px;
     height: 10px;
@@ -56,7 +56,7 @@ body {
     transform: translate(-50%, -50%);
     transition: all 25ms 0s linear;
     z-index: 999;
-} */
+}
 
 /* Loading page code */
 
@@ -342,6 +342,7 @@ section {
     background: radial-gradient(var(--radial-gradient-Color) -50%, var(--radial-gradient-Color2));
     color: var(--whiteBlack);
     transition: all 1500ms 250ms ease;
+    height:425px;
 }
 section::before {
     content: "";
@@ -353,87 +354,123 @@ section::before {
     filter: blur(3px);
     z-index: -1;
 }
-section h1.welcome-h1 {
-    margin-bottom: 25px;
-    padding: 0 5px;
-    color: var(--whiteBlack);
-    background-color: rgba(255, 0, 0, 0.048);
-    text-shadow: 0px 0px 10px var(--BtnHover);
-    border-right: 3px solid blue;
-    white-space: pre;
-    overflow: hidden;
-    width: fit-content;
-    animation: typing-h1 2s 0s steps(50) 2, blink 500ms infinite ease;
-}
-section div.me-full-stack {
+section div.me {
     width: fit-content;
     margin-left: 10px;
 }
-.me-full-stack p {
+.me div {
+    display: flex;
+    gap: 35px;
+    width: 835px;
+}
+.me p {
     margin: 0;
 }
-.me-full-stack h1 {
-    padding: 5px;
+.me h1 {
     margin-left: 20px;
     color: var(--whiteBlack);
     text-shadow: 0px 0px 10px var(--BtnHover);
+    text-align: center;
     border-right: 3px solid blue;
     border-bottom: 3px solid blue;
     white-space: pre;
     overflow: hidden;
-    width: fit-content;
+    height: 55px;
     animation: typing-p 3s 0s steps(2500), blink 500ms infinite ease;
 }
+.me h1:nth-child(1) {
+    width: auto;
+}
+.me h1:nth-child(2) {
+    width: auto;
+}
 section div.myPicture {
+    margin: 35px 30px 0 0;
     position: absolute;
     top: 20px;
     right: 2%;
     width: 250px;
-    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    outline: 2px solid black;
+    border-radius: 35px;
+    box-shadow: 15px 25px 35px 0 var(--fromCyanTo000020);
     overflow: hidden;
+    transform: rotateZ(5deg);
     z-index: 0;
 }
-.myPicture::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#00f2ff,#4da3ff,#6f00ff);
-    animation: rotate 5s linear infinite;
-    z-index: -1;
-}
 .myPicture img {
-    border-radius: 20px;
     outline: 1px solid black;
     object-fit:cover;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
 }
-.cv-btn {
+.myBtns {
+    margin-top: 35px;
+    margin-left: 15%;
     display: flex;
-    justify-content: end;
-    align-items: center;
+    width: fit-content;
 }
-.cv-btn button {
-    background-color: var(--primaryColor);
+.myBtns button {
+    background-color: transparent;
     color: var(--whiteBlack);
-    padding: 8px 10px;
+    padding: 5px 8px;
     margin: 0 10px;
     border: 1.5px solid var(--whiteBlack);
     border-radius: 10px;
     font-size: 16px;
     transition: all 0.25s 0s ease;
 }
-.cv-btn button:hover {
+.myBtns button:hover {
     background-color: var(--BtnHover);
     box-shadow: 0 0 5px 0px var(--whiteBlack);
+}
+.myBtns span {
+    margin-left: 18px;
+    font-size: 20px;
+    border: 1.5px solid var(--whiteBlack);
+    border-radius: 50%;
+    color: var(--whiteBlack);
+}
+.myBtns i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    transition: all 0.25s 0s ease;
+}
+.myBtns i[class="bi bi-facebook"]:hover {
+    color: blue;
+    cursor: pointer;
+}
+.myBtns i[class="bi bi-instagram"]:hover {
+    color: #e4405f;
+    cursor: pointer;
+}
+.myBtns i[class="bi bi-linkedin"]:hover {
+    color: blue;
+    cursor: pointer;
+}
+.myBtns i[class="bi bi-github"]:hover {
+    color: purple;
+    cursor: pointer;
+}
+div.details {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    text-align: center;
+    gap: 5%;
+}
+.details div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* End of section */

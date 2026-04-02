@@ -70,14 +70,14 @@
     from {
         width: 0%;
     } to {
-        width: 450px;
+        width: 300px;
     }
 }
 @keyframes typing-p {
     from {
         width: 0%;
     } to {
-        width: 270px;
+        width: 300px;
     }
 }
 @keyframes rotate {
