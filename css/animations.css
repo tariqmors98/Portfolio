@@ -1,0 +1,89 @@
+/* Animations for index.html */
+
+/* Loading page */
+
+@keyframes typing-1 {
+    from {
+        width: 0%;
+    } to {
+        width: 935px;
+    }
+}
+@keyframes typing-2 {
+    from {
+        width: 0%;
+    } to {
+        width: 400px;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@keyframes loading {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 100%;
+    }
+}
+@keyframes spinner {
+    0% {
+        rotate: 0deg;
+    } 100% {
+        rotate: 360deg;
+    }
+}
+@keyframes spinner-img {
+    0% {
+        rotate: 0deg;
+    } 100% {
+        rotate: -360deg;
+    }
+}
+
+/* header code */
+
+@keyframes top-to-bottom {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    } 50% {
+        transform: scale(1.1);
+    } 100% {
+        transform: scale(1);
+    }
+}
+
+/* section animations */
+
+@keyframes typing-h1 {
+    from {
+        width: 0%;
+    } to {
+        width: 300px;
+    }
+}
+@keyframes typing-p {
+    from {
+        width: 0%;
+    } to {
+        width: 300px;
+    }
+}
+@keyframes rotate {
+    0% {
+        filter:hue-rotate(0deg);
+    } 100% {
+        filter:hue-rotate(360deg);
+    }
+}
