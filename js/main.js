@@ -1,13 +1,4 @@
 
-/* mouseGlow javascript code */
-
-const glow = document.getElementById("mouseGlow");
-
-document.addEventListener("mousemove", (e) => {
-    glow.style.left = e.clientX + "px";
-    glow.style.top = e.clientY + "px";
-});
-
 // menu toggle
 
 const menuToggle = document.getElementById("menuToggle");
@@ -27,26 +18,26 @@ whenClicked.forEach(function (link) {
 
 /* showing body after 1s */
 
-setTimeout(() => {
-    document.body.style.display = "block";
-    let count = 0;
-    let text = document.getElementById("loadText");
-    let interval = setInterval(() => {
-        count++;
-        text.innerText = "..... Loading " + count + "% .....";
-        if (count == 100) {
-            clearInterval(interval);
-            setTimeout(() => {
-                document.getElementById("loader").style.display = "none";
-                let main = document.getElementById("mainContent");
-                main.style.display = "block";
-                setTimeout(() => {
-                    main.classList.add("show");
-                }, 500);
-            }, 1500)
-        }
-    }, 50);
-}, 1000);
+// setTimeout(() => {
+//     document.body.style.display = "block";
+//     let count = 0;
+//     let text = document.getElementById("loadText");
+//     let interval = setInterval(() => {
+//         count++;
+//         text.innerText = "..... Loading " + count + "% .....";
+//         if (count == 100) {
+//             clearInterval(interval);
+//             setTimeout(() => {
+//                 document.getElementById("loader").style.display = "none";
+//                 let main = document.getElementById("mainContent");
+//                 main.style.display = "block";
+//                 setTimeout(() => {
+//                     main.classList.add("show");
+//                 }, 500);
+//             }, 1500)
+//         }
+//     }, 50);
+// }, 1000);
 
 // move between light and dark mode //
 

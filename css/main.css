@@ -44,24 +44,9 @@ body {
     z-index: 0;
 }
 
-
-body span#mouseGlow {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    pointer-events: none;
-    background: black;
-    box-shadow: 0 0 20px 20px white,
-                0 0 20px 20px blue;
-    transform: translate(-50%, -50%);
-    transition: all 25ms 0s linear;
-    z-index: 999;
-}
-
 /* Loading page code */
 
-div#loader {
+/* div#loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -148,11 +133,11 @@ div#loader {
     font-size: 14px;
     font-weight: bolder;
     letter-spacing: 5px;
-}
+} */
 
 /* hide site first */
 
-body #mainContent {
+/* body #mainContent {
     display: none;
     opacity: 0;
     background-color: #050520;
@@ -163,7 +148,7 @@ body #mainContent {
     background-color: transparent;
     opacity: 1;
     filter: blur(0px); 
-}
+} */
 
 
 /* header code */
@@ -476,7 +461,26 @@ div.details {
 
 /* End of section */
 /* ----------------------------------- */
-/* footer code */
+/* myProjects section Code */
+
+section.myProjects {
+    background: var(--from00000080Toffffff80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myProjects .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.myProjects .container div {
+    display: grid;
+}
+.myProjects .container p {
+    width: 100px;
+    height: 200px;
+}
 footer {
     background: var(--from050520ToSkyblue);
     box-shadow: 0px 0px 10px 0px var(--whiteBlack) inset;
